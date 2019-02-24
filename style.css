@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    background-image: url(https://buidln.clipdealer.com/001/892/555//previews/3--1892555-meadow%20and%20sky%20background.jpg);
+    background-color: deepskyblue;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+
+.header {
+  background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2016/10/Best-Retro-Gaming-Consoles-.jpg);
+  height: 400px;
+  background-position: center center;
+}
+
+
+h1 {
+    position: relative;
+    font-family: monospace;
+    color: aliceblue;
+    font-size: 42px;
+    text-align: center;
+    margin: 0;
+    top: 30%;
+    background-color: black;
+    margin-bottom: 270px;
+    }
+
+/*Nav styling*/
+ul {
+background-position: center center;
+  position: relative;    
+  display: inline-flex;
+  list-style-type: none;
+  padding: inherit;
+  background-color: black;
+  font-size: 20px;
+  font-family: monospace;
+  text-align: center;
+align-self: center;
+
+}
+
+li {
+  color: white;
+  position: relative;  
+    align-self: center;
+  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: white;
+  color: black;
+}
+
+h2 {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: 30px;
+    position: relative;
+}
+
+h3 {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: 30px;
+}
+h4 {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+p1 {
+    color: white ;
+    font-family: monospace;
+    font-size: 20px;
+    
+}
+p2 {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+p3 {
+    font-size: 28px;
+    color: black;
+    font-family: monospace
+}
+
+p4 {
+    font-size: 29px;
+    font-family: monospace;
+}
+p5 {
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+
+p6 {
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+p7 {
+    font-size: 28px;
+    font-family: monospace;
+    color: white;
+}
+
+.about {
+    background-color: #d3a05f;
+    margin: 0px auto;
+    padding: 20px 30px 40px 30px;
+    overflow: auto;
+    width: 75%;
+    border-radius: 8px;
+    align-self: center;
+    opacity: .92;
+    border-color: black;
+    border: 2px;
+}
+
+.projects {
+    background-color: #d3a05f; 
+    margin: 0px auto;
+    padding: 20px 30px 40px 30px;
+    overflow: auto;
+    width: 75%;
+    border-radius: 8px;
+    opacity: .92;
+    position: relative;
+}
+
+.profiles {
+    background-color: #d3a05f; 
+    margin: 0px auto;
+    padding: 20px 30px 40px 30px;
+    overflow: auto;
+    width: 75%;
+    border-radius: 8px;
+    opacity: .92;
+    
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+text-align: center;
+}
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 0;
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+}
+
+/* Clear floats after image containers */
+.row {
+  display: flex;
+}
+
+figcaption {
+    font-size: 20px; 
+}
+
+nav {
+    position: relative;
+    text-align: center;
+}
+/*Iframe position*/
+#game {
+    position: relative; 
+    align-self: center;
+    object-position: center;
+    display: block;
+}
+
+.table {
+    border: 3px solid black;
+
+}
