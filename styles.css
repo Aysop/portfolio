@@ -39,7 +39,8 @@ h1 {
 /*Nav styling*/
 ul {
 background-position: center center;
-  position: relative;    
+  position: sticky;  
+    top: 0;
   display: inline-flex;
   list-style-type: none;
   padding: inherit;
