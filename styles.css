@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
     font-size: 14px;
@@ -11,16 +12,16 @@ html, body{
     background-image: url(https://buidln.clipdealer.com/001/892/555//previews/3--1892555-meadow%20and%20sky%20background.jpg);
     background-color: deepskyblue;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed
 }
 
 
 .header {
-  background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2016/10/Best-Retro-Gaming-Consoles-.jpg);
-  height: 400px;
-  background-position: center center;
+    background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2016/10/Best-Retro-Gaming-Consoles-.jpg);
+    height: 400px;
+    background-position: center center;
 }
 
 
@@ -34,44 +35,44 @@ h1 {
     top: 30%;
     background-color: black;
     margin-bottom: 270px;
-    }
+}
 
 /*Nav styling*/
 ul {
-background-position: center center;
-    
-  display: inline-flex;
-  list-style-type: none;
-  padding: inherit;
-  background-color: black;
-  font-size: 20px;
-  font-family: monospace;
-  text-align: center;
-align-self: center;
-  position: sticky;
+    background-position: center center;
+
+    display: inline-flex;
+    list-style-type: none;
+    padding: inherit;
+    background-color: black;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    align-self: center;
+    position: sticky;
     top: 0;
 }
 
 }
 
 li {
-  color: white;
-  position: relative;  
+    color: white;
+    position: relative;
     align-self: center;
-  }
+}
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
 
 h2 {
@@ -88,6 +89,7 @@ h3 {
     font-family: monospace;
     font-size: 30px;
 }
+
 h4 {
     color: white;
     background: black;
@@ -99,13 +101,14 @@ p1 {
     color: black;
     font-family: monospace;
     font-size: 20px;
-    
 }
+
 p2 {
     color: black;
     font-family: monospace;
     font-size: 20px;
 }
+
 p3 {
     font-size: 28px;
     color: black;
@@ -116,6 +119,7 @@ p4 {
     font-size: 29px;
     font-family: monospace;
 }
+
 p5 {
     font-size: 20px;
     font-family: monospace;
@@ -127,6 +131,7 @@ p6 {
     font-family: monospace;
     color: black;
 }
+
 p7 {
     font-size: 28px;
     font-family: monospace;
@@ -144,10 +149,12 @@ p7 {
     opacity: .92;
     border-color: black;
     border: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px
 }
 
 .project {
-    background-color: #d3a05f; 
+    background-color: #d3a05f;
     margin: 0px auto;
     padding: 20px 30px 40px 30px;
     overflow: auto;
@@ -155,51 +162,57 @@ p7 {
     border-radius: 8px;
     opacity: .92;
     position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .profiles {
-    background-color: #d3a05f; 
+    background-color: #d3a05f;
     margin: 0px auto;
     padding: 20px 30px 40px 30px;
     overflow: auto;
     width: 75%;
     border-radius: 8px;
     opacity: .92;
-    
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 
 
 .column {
-  float: left;
-  width: 20%;
-  padding: 5px;
-text-align: center;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
 }
+
 .column2 {
-  float: left;
-  width: 30%;
-  padding: 0;
-  margin-top: 50px;
-  position: relative;
-  text-align: center;
+    float: left;
+    width: 30%;
+    padding: 0;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
 }
 
 /* Clear floats after image containers */
 .row {
-  display: flex;
+    display: flex;
 }
 
 figcaption {
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 nav {
     position: relative;
     text-align: center;
 }
+
 /*Iframe position*/
 #game {
-    position: relative; 
+    position: relative;
     align-self: center;
     object-position: center;
     display: block;
@@ -208,4 +221,9 @@ nav {
 .table {
     border: 5px solid black;
 
+}
+
+audio {
+    background-position: center;
+    align-self: center
 }
