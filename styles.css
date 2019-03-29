@@ -22,7 +22,7 @@ body {
     background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2016/10/Best-Retro-Gaming-Consoles-.jpg);
     height: 400px;
     background-position: center center;
-    background-size:;
+    background-size: ;
 }
 
 
@@ -234,73 +234,79 @@ audio {
 
 button,
 input[type="button"] {
-	border: none;
-	border-radius: 0;
-	background: #000;
-	color: #fff;
-  cursor: pointer;
-	display: inline-block;
-	padding: 1em 1.5em;
-	text-transform: uppercase;
-	transition: all 0.25s ease-in-out;
+    border: none;
+    border-radius: 0;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
 }
 
 .menu-toggle {
-  font-size: 0.875em;
-	padding: 1em;
+    font-size: 0.875em;
+    padding: 1em;
 }
+
 .menu-toggle:focus {
-	outline: thin dotted;
-  outline-offset: -2px;
+    outline: thin dotted;
+    outline-offset: -2px;
 }
 
 .icon {
-	display: inline-block;
-	fill: currentColor;
-	height: 1em;
-	width: 1em;
-	vertical-align: middle;
-	position: relative; /* Align more nicely with capital letters */
-	top: -0.0625em;
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    position: relative;
+    /* Align more nicely with capital letters */
+    top: -0.0625em;
 }
 
 /* Menu toggle styles. */
 
 .icon-menu-toggle {
-	width: 1em;
-	height: 1em;
-  top: 0;
+    width: 1em;
+    height: 1em;
+    top: 0;
 }
 
 /* Animate menu icon (lines). */
 .svg-menu-toggle .line {
-  opacity: 1;
-  transform: rotate(0) translateY(0) translateX(0);
-  transform-origin: 1em 1em;
-  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1em 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
+
 .svg-menu-toggle .line-1 {
-  transform-origin: 1em 2.5em;
+    transform-origin: 1em 2.5em;
 }
+
 .svg-menu-toggle .line-3 {
-  transform-origin: 1em 4.5em;
+    transform-origin: 1em 4.5em;
 }
 
 .menu-toggle.opened .svg-menu-toggle .line-1 {
-  transform: rotate(45deg) translateY(0) translateX(0);
+    transform: rotate(45deg) translateY(0) translateX(0);
 }
+
 .menu-toggle.opened .svg-menu-toggle .line-2 {
-  opacity: 0;
+    opacity: 0;
 }
+
 .menu-toggle.opened .svg-menu-toggle .line-3 {
-  transform: rotate(-45deg) translateY(0em) translateX(0em);
+    transform: rotate(-45deg) translateY(0em) translateX(0em);
 }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
