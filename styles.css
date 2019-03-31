@@ -22,7 +22,6 @@ body {
     background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2016/10/Best-Retro-Gaming-Consoles-.jpg);
     height: 400px;
     background-position: center center;
-    background-size: ;
 }
 
 
@@ -140,6 +139,12 @@ p7 {
     color: black;
 }
 
+p8 {
+    font-size: 29px;
+    font-family: monospace;
+    color: black
+}
+
 .about {
     background-color: #d3a05f;
     margin: 0px auto;
@@ -225,11 +230,11 @@ nav {
 
 }
 
-audio {
-    background-position: center;
-    align-self: center
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 }
-
 
 
 button,
@@ -239,15 +244,14 @@ input[type="button"] {
     background: #000;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
-    padding: 1em 1.5em;
+    padding: inherit display: inline-block;
     text-transform: uppercase;
     transition: all 0.25s ease-in-out;
 }
 
 .menu-toggle {
     font-size: 0.875em;
-    padding: 1em;
+    padding: em;
 }
 
 .menu-toggle:focus {
@@ -256,7 +260,7 @@ input[type="button"] {
 }
 
 .icon {
-    display: inline-block;
+    display: inline-flex;
     fill: currentColor;
     height: 1em;
     width: 1em;
@@ -287,7 +291,7 @@ input[type="button"] {
 }
 
 .svg-menu-toggle .line-3 {
-    transform-origin: 1em 4.5em;
+    transform-origin: 1em 3.5em;
 }
 
 .menu-toggle.opened .svg-menu-toggle .line-1 {
@@ -309,4 +313,58 @@ input[type="button"] {
     height: 1px;
     width: 1px;
     overflow: hidden;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
 }
