@@ -14,21 +14,71 @@
         </audio>
         <h1>Portfolio of Joseph G. Morelli</h1>
 
-        <nav name="home" class="navigation">
+        <nav class="navigation" name="home">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#profiles">Profiles</a></li>
-                <li><button class="menu-toggle" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
-                        <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
-                            <g class="svg-menu-toggle">
-                                <path class="line line-1" d="M5 13h90v14H5z" />
-                                <path class="line line-2" d="M5 43h90v14H5z" />
-                                <path class="line line-3" d="M5 73h90v14H5z" />
-                            </g>
-                        </svg>
-                    </button> </li>
+                <li>
+                    <div class="dropdown"><button onclick="myFunction()" class="menu-toggle" class="dropbtn" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
+                            <a><svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                                    <g class="svg-menu-toggle">
+                                        <path class="line line-1" d="M5 13h90v14H5z" />
+                                        <path class="line line-2" d="M5 43h90v14H5z" />
+                                        <path class="line line-3" d="M5 73h90v14H5z" />
+                                    </g>
+                                </svg></a>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <script>
+                        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                    <script src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
+                    <script id="rendered-js">
+                        // Set button to click.
+                        var button = document.getElementById('menu-toggle');
+
+                        // Click the button.
+                        button.onclick = function() {
+
+                            // Toggle class "opened". Set also aria-expanded to true or false.
+                            if (-1 !== button.className.indexOf('opened')) {
+                                button.className = button.className.replace(' opened', '');
+                                button.setAttribute('aria-expanded', 'false');
+                            } else {
+                                button.className += ' opened';
+                                button.setAttribute('aria-expanded', 'true');
+                            }
+
+                        };
+
+                    </script>
+                </li>
             </ul>
         </nav>
     </div>
@@ -52,10 +102,10 @@
         <table>
             <p2> As of late, I have two particular projects I'd like to share. the first is a game demo I made using the Scratch progam, and the second is a Retro Pie gaming system.<br><br>
                 <p3>Land of Locke:</p3><br><br>
-                <p8 align="center"><iframe id="game" scrolling="no" allowtransparency="false" width="658" height="536" bgcolor=#220000 src="https://scratch.mit.edu/projects/282426066/embed/" allowfullscreen align="center"></iframe></p8><br><br>
+                <p8 align="center"><iframe class="center" id="game" scrolling="no" allowtransparency="false" width="658" height="536" bgcolor=#220000 src="https://scratch.mit.edu/projects/282426066/embed/" allowfullscreen align="center"></iframe></p8><br><br>
             </p2>
             <p4>Retro Pie:<br></p4>
-            <p5>This simple Raspberry Pie project has brought me a GREAT deal of fun. Using a Raspberry Pie 3, and a set of online instructions, I was able to create a retro gaming emulation station to replay old favorites and classics. The system is HDMI and ethernet compatible, with four USB ports for controllers. Below are a few attached photos of the process.<br><br>
+            <p5>This simple Raspberry Pie project has brought me a GREAT deal of fun. Using a Raspberry Pie 3, and a set of online instructions, I was able to create a retro gaming emulation station to replay old favorites and classics. The system is HDMI and ethernet compatible, with four USB ports for controllers. Below are a few attached photos of the process.<br>
                 <div class="row">
 
                     <!--Photos for Projects-->
@@ -82,9 +132,16 @@
                     <div class="column">
                         <a href="https://i.imgur.com/i7kgf40.jpg"> <img src=https://i.imgur.com/i7kgf40.jpg alt="Playtime" style="width200px;height:175px;">
                             <figcaption>Ready to Play!</figcaption>
-                        </a></div>
+                        </a></div><br>
+
                 </div>
             </p5>
+            <p8>Future projects: Magic Mirror</p8><br><br>
+            <div><video class="center" width="420" height="240" controls>
+                    <source src="magicMirror.mp4" type="video/mp4">
+                    <source src="magicMirror.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video></div>
         </table>
     </div>
 
