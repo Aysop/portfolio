@@ -212,17 +212,21 @@ figcaption {
     font-size: 20px;
 }
 
-nav {
-    position: relative;
-    text-align: center;
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-position: center;
+    z-index: 10;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 /*Iframe position*/
 #game {
-    position: relative;
-    align-self: center;
-    object-position: center;
-    display: block;
+ border: 2.5px solid black;
+ border-radius: 8px;
+    
 }
 
 .table {
@@ -234,6 +238,11 @@ nav {
     margin-left: auto;
     margin-right: auto;
     display: block
+}
+
+.video {
+    border: 2.5px solid black;
+    border-radius: 8px;
 }
 
 
