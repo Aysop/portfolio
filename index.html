@@ -20,65 +20,41 @@
                 <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#profiles">Profiles</a></li>
-                <li>
-                    <div class="dropdown"><button onclick="myFunction()" class="menu-toggle" class="dropbtn" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
-                            <a><svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
-                                    <g class="svg-menu-toggle">
-                                        <path class="line line-1" d="M5 13h90v14H5z" />
-                                        <path class="line line-2" d="M5 43h90v14H5z" />
-                                        <path class="line line-3" d="M5 73h90v14H5z" />
-                                    </g>
-                                </svg></a>
-                        </button>
-                    </div>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                    <script>
-                        /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-                        function myFunction() {
-                            document.getElementById("myDropdown").classList.toggle("show");
-                        }
+                <li onclick="myFunction()" class="menu-toggle drpbtn" id="menu-toggle" aria-expanded="false">
+                    <a><svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                            <g class="svg-menu-toggle">
+                                <path class="line line-1" d="M5 13h90v14H5z" />
+                                <path class="line line-2" d="M5 43h90v14H5z" />
+                                <path class="line line-3" d="M5 73h90v14H5z" />
+                            </g>
+                        </svg></a>
+                    <ul>
+                        <a href="Report.pdf" download>Fields Report PDF</a>
 
-                        // Close the dropdown if the user clicks outside of it
-                        window.onclick = function(event) {
-                            if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
-
-                    </script>
-                    <script src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
-                    <script id="rendered-js">
-                        // Set button to click.
-                        var button = document.getElementById('menu-toggle');
-
-                        // Click the button.
-                        button.onclick = function() {
-
-                            // Toggle class "opened". Set also aria-expanded to true or false.
-                            if (-1 !== button.className.indexOf('opened')) {
-                                button.className = button.className.replace(' opened', '');
-                                button.setAttribute('aria-expanded', 'false');
-                            } else {
-                                button.className += ' opened';
-                                button.setAttribute('aria-expanded', 'true');
-                            }
-
-                        };
-
-                    </script>
+                    </ul>
                 </li>
+
+
+                <script src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
+                <script id="rendered-js">
+                    // Set button to click.
+                    var button = document.getElementById('menu-toggle');
+
+                    // Click the button.
+                    button.onclick = function() {
+
+                        // Toggle class "opened". Set also aria-expanded to true or false.
+                        if (-1 !== button.className.indexOf('opened')) {
+                            button.className = button.className.replace(' opened', '');
+                            button.setAttribute('aria-expanded', 'false');
+                        } else {
+                            button.className += ' opened';
+                            button.setAttribute('aria-expanded', 'true');
+                        }
+
+                    };
+
+                </script>
             </ul>
         </nav>
     </div>
@@ -88,7 +64,9 @@ toggle between hiding and showing the dropdown content */
     </div>
     <div class="about table">
         <table>
-            <p1>When I consider "who I am", I take three things into account: where I came from, where I am, and where I'm going. Geographically, I'm from rural Ohio, of which I have little to comment on. Currently, I'm a server in Naples, FL, navigating my way to a Software Engineering degree. Personally, I find this "where I am currently" to be the most important, for it dictates "where I'm going"- And where I want to be, is among the stars. <br><br> I speak in hypotheticals, of course, and a more realistic answer would be "an excelling member of my field". I have quite a ways to go, but I believe if I continue on the trjectory I've set for myself, I'll find myself just where I'd like to be.<br><br>As for interests, gaming has always been a landmark in my life. I grew up in the age of N64's and Playstations and dedicated a sizable portion of my life playing them with my sibilings and trying to understand them. As we grew older, our shared passion of gaming evolved, and strengthens our bonds to this day. In fact, the only way I can consistently keep in touch with a few of them, is when were grinding in-game! It's reasons like these, among innumerable others, I hope to one day transform my hobby into something of a career, and beyond that, a passion.</p1>
+            <p1>When I consider "who I am", I take three things into account: where I came from, where I am, and where I'm going. Geographically, I'm from rural Ohio, of which I have little to comment on. Currently, I'm a server in Naples, FL, navigating my way to a Software Engineering degree. Personally, I find this "where I am currently" to be the most important, for it dictates "where I'm going"- And where I want to be, is among the stars. <br><br> I speak in hypotheticals, of course, and a more realistic answer would be "an excelling member of my field". I have quite a ways to go, but I believe if I continue on the trjectory I've set for myself, I'll find myself just where I'd like to be.<br><br>As for interests, gaming has always been a landmark in my life. I grew up in the age of N64's and Playstations and dedicated a sizable portion of my life playing them with my sibilings and trying to understand them. As we grew older, our shared passion of gaming evolved, and strengthens our bonds to this day. In fact, the only way I can consistently keep in touch with a few of them, is when were grinding in-game! It's reasons like these, among innumerable others, I hope to one day transform my hobby into something of a career, and beyond that, a passion.<br><br>
+                If your curious of further insight regarding my thoughts on Computer Science and Software Engineering, I've included this <a href="Report.pdf">Fields Report</a> to elaborate.</p1>
+
         </table>
     </div>
 
@@ -165,8 +143,18 @@ toggle between hiding and showing the dropdown content */
             <div class="column2">
                 <figure><a href="https://github.com/Cotton3y3"><img src=data:image/png;base64,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 style="height:100px;" alt="github">
                         <figcaption>Github Profile</figcaption>
-                    </a></figure>
+                    </a></figure><br><br>
             </div>
+            <canvas class="center" id="myCanvas" width="260" height="100">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "50px monospace";
+                ctx.strokeText("Thank You!", 10, 50);
+
+            </script>
         </p6>
     </div>
 </body>
