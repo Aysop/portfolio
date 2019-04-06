@@ -84,7 +84,7 @@ h2 {
     font-size: 30px;
     position: relative;
 }
-
+/* header stylings */
 h3 {
     color: white;
     background: black;
@@ -99,6 +99,7 @@ h4 {
     font-size: 30px;
 }
 
+/* Paragraph stylings*/
 p1 {
     color: black;
     font-family: monospace;
@@ -150,6 +151,7 @@ canvas {
     border: 1px solid black;
 }
 
+/* table stylings */
 .about {
     background-color: #d3a05f;
     margin: 0px auto;
