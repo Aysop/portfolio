@@ -22,6 +22,7 @@ body {
     background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2016/10/Best-Retro-Gaming-Consoles-.jpg);
     height: 400px;
     background-position: center center;
+
 }
 
 
@@ -39,39 +40,41 @@ h1 {
 }
 
 /*Nav styling*/
-ul {
+nav ul {
     background-position: center center;
-
     display: inline-flex;
     list-style-type: none;
-    padding: inherit;
+    padding: 0px;
     background-color: black;
     font-size: 20px;
     font-family: monospace;
     text-align: center;
     align-self: center;
+    overflow: visible;
+    margin-bottom: -25px;
 }
-
-
 
 li {
     color: white;
     position: relative;
     align-self: center;
+
 }
 
 li a {
-    display: block;
+    display: inline-flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    overflow: auto;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: white;
     color: black;
+    overflow: visible;
 }
 
 h2 {
@@ -143,6 +146,7 @@ p8 {
     color: black
 }
 
+
 .about {
     background-color: #d3a05f;
     margin: 0px auto;
@@ -210,15 +214,11 @@ figcaption {
     font-size: 20px;
 }
 
-.nav {
-    
-}
-
 /*Iframe position*/
 #game {
- border: 2.5px solid black;
- border-radius: 8px;
-    
+    border: 2.5px solid black;
+    border-radius: 8px;
+
 }
 
 .table {
@@ -316,56 +316,20 @@ input[type="button"] {
     overflow: hidden;
 }
 
-
-
-
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+ul li ul a {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: white;
+nav ul li:hover ul a {
+    display: block;
+    position: absolute;
+    overflow: visible;
+}
+
+nav ul li ul a {
+    position: absolute;
     background-color: black;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display: block;
+    z-index: 10;
+    width: 150px;
 }
