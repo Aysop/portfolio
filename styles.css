@@ -143,9 +143,12 @@ p7 {
 p8 {
     font-size: 29px;
     font-family: monospace;
-    color: black
+    color: black;
 }
 
+canvas {
+    border: 1px solid black;
+}
 
 .about {
     background-color: #d3a05f;
