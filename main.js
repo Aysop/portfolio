@@ -1,4 +1,4 @@
-// Set button to click.
+// Set button to click. Source: https://codepen.io/samikeijonen/pen/jqvxdL
 var button = document.getElementById("menu-toggle");
 
 // Click the button.
@@ -11,25 +11,5 @@ button.onclick = function () {
     } else {
         button.className += " opened";
         button.setAttribute("aria-expanded", "true");
-    }
-}
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
     }
 }
