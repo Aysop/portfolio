@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/014/760/370/large/gokamyo-draws-cm-marca.jpg?1545334142);
+    background-color: deepskyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+
+.header {
+    background-image: url(https://septimobit.files.wordpress.com/2012/04/originalzelda2.jpg);
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+
+}
+
+
+h1 {
+    position: relative;
+    font-family: monospace;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    margin: 0;
+    top: 30%;
+    background-color: black;
+    margin-bottom: 210px;
+    margin-top: -25px
+}
+
+/*Nav styling*/
+nav ul {
+    background-position: center center;
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0px;
+    background-color: black;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    align-self: center;
+    overflow: visible;
+    margin-bottom: -25px;
+}
+
+li {
+    color: white;
+    position: relative;
+    align-self: center;
+
+}
+
+li a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: auto;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: white;
+    color: black;
+    overflow: visible;
+}
+
+h2 {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: 30px;
+    position: relative;
+}
+/* header stylings */
+h3 {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+h4 {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+/* Paragraph stylings*/
+p1 {
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+p2 {
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+p3 {
+    font-size: 28px;
+    color: black;
+    font-family: monospace
+}
+
+p4 {
+    font-size: 29px;
+    font-family: monospace;
+}
+
+p5 {
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+p6 {
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+
+p7 {
+    font-size: 28px;
+    font-family: monospace;
+    color: black;
+}
+
+p8 {
+    font-size: 29px;
+    font-family: monospace;
+    color: black;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+/* table stylings */
+.about {
+    background-color: #d3a05f;
+    margin: 0px auto;
+    padding: 20px 30px 40px 30px;
+    overflow: auto;
+    width: 75%;
+    border-radius: 8px;
+    align-self: center;
+    opacity: .92;
+    border-color: black;
+    border: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.project {
+    background-color: #d3a05f;
+    margin: 0px auto;
+    padding: 20px 30px 40px 30px;
+    overflow: auto;
+    width: 75%;
+    border-radius: 8px;
+    opacity: .92;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profiles {
+    background-color: #d3a05f;
+    margin: 0px auto;
+    padding: 20px 30px 40px 30px;
+    overflow: auto;
+    width: 75%;
+    border-radius: 8px;
+    opacity: .92;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+}
+
+.column2 {
+    float: left;
+    width: 30%;
+    padding: 0;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+/* Clear floats after image containers */
+.row {
+    display: flex;
+}
+
+figcaption {
+    font-size: 20px;
+}
+
+/*Iframe position*/
+#game {
+    border: 2.5px solid black;
+    border-radius: 8px;
+
+}
+
+.table {
+    border: 5px solid black;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+.video {
+    border: 2.5px solid black;
+    border-radius: 8px;
+}
+
+
+button,
+input[type="button"] {
+    border: none;
+    border-radius: 0;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: inherit display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-toggle {
+    font-size: 0.875em;
+    padding: em;
+}
+
+.menu-toggle:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+
+.icon {
+    display: inline-flex;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    position: relative;
+    /* Align more nicely with capital letters */
+    top: -0.0625em;
+}
+
+/* Menu toggle styles. */
+
+.icon-menu-toggle {
+    width: 1em;
+    height: 1em;
+    top: 0;
+}
+
+/* Animate menu icon (lines). */
+.svg-menu-toggle .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1em 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.svg-menu-toggle .line-1 {
+    transform-origin: 1em 2.5em;
+}
+
+.svg-menu-toggle .line-3 {
+    transform-origin: 1em 3.5em;
+}
+
+.menu-toggle.opened .svg-menu-toggle .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0);
+}
+
+.menu-toggle.opened .svg-menu-toggle .line-2 {
+    opacity: 0;
+}
+
+.menu-toggle.opened .svg-menu-toggle .line-3 {
+    transform: rotate(-45deg) translateY(0em) translateX(0em);
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+ul li ul li a {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul a {
+    display: block;
+    position: absolute;
+    overflow: visible;
+}
+
+nav ul li ul li a {
+    position: absolute;
+    background-color: black;
+    z-index: 10;
+    width: 150px;
+    overflow: visible;
+}
