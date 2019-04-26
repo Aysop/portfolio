@@ -54,7 +54,6 @@
                         }
 
                     };
-
                 </script>
             </ul>
         </nav>
@@ -123,6 +122,44 @@
                 </video></div>
         </table>
     </div>
+    <!--Caeser Section-->
+    <div>
+        <h2>Caesar Cipher</h2>
+    </div>
+    <div class="about table">
+        <table>
+            <p9>
+                <p>Secret message: <input id="text" size="80"></p>
+                <p>Shift by key: <input id="key" size="2" value="3"></p>
+                <p>Encoded message:
+                    <span id="output" style="color:red"></span></p>
+                <script src="main.js"></script>
+                <script>
+                    $('input').keyup(function() {
+                        var k = Number($('#key').val());
+                        if (!(k >= 0 && k < 26)) {
+                            $('#output').html('Key should be between 0 and 25');
+                            return;
+                        }
+                        var secret = $('#text').val().toLowerCase();
+                        var encoded = '';
+                        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+                        for (var j = 0; j < secret.length; j += 1) {
+                            var nextchar = secret.charAt(j);
+                            var index = alphabet.indexOf(nextchar);
+                            if (index >= 0) {
+                                var shifted = (index + k) % 26;
+                                encoded += alphabet.charAt(shifted);
+                            } else {
+                                encoded += nextchar;
+                            }
+                        }
+                        $('#output').html(encoded);
+                    });
+                </script>
+            </p9>
+        </table>
+    </div>
 
     <!--Profiles Section-->
     <div>
@@ -155,12 +192,8 @@
             var ctx = c.getContext("2d");
             ctx.font = "50px monospace";
             ctx.strokeText("Thank You!", 10, 50);
-
         </script>
     </div>
 </body>
 
 </html>
-
-
-
