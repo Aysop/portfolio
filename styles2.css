@@ -86,67 +86,12 @@ h2 {
     font-size: 30px;
     position: relative;
 }
-/* header stylings */
-h3 {
-    color: white;
-    background: black;
-    font-family: monospace;
-    font-size: 30px;
-}
-
-h4 {
-    color: white;
-    background: black;
-    font-family: monospace;
-    font-size: 30px;
-}
 
 /* Paragraph stylings*/
 p1 {
     color: black;
     font-family: monospace;
     font-size: 20px;
-}
-
-p2 {
-    color: black;
-    font-family: monospace;
-    font-size: 20px;
-}
-
-p3 {
-    font-size: 28px;
-    color: black;
-    font-family: monospace
-}
-
-p4 {
-    font-size: 29px;
-    font-family: monospace;
-}
-
-p5 {
-    font-size: 20px;
-    font-family: monospace;
-    color: black;
-}
-
-p6 {
-    font-size: 20px;
-    font-family: monospace;
-    color: black;
-}
-
-p7 {
-    font-size: 28px;
-    font-family: monospace;
-    color: black;
-}
-
-p8 {
-    font-size: 29px;
-    font-family: monospace;
-    color: black;
 }
 
 canvas {
@@ -166,67 +111,15 @@ canvas {
     border-color: black;
     border: 2px;
     margin-bottom: 10px;
-    margin-top: 10px
+    margin-top: 30px
 }
 
-.project {
-    background-color: #d3a05f;
-    margin: 0px auto;
-    padding: 20px 30px 40px 30px;
-    overflow: auto;
-    width: 75%;
-    border-radius: 8px;
-    opacity: .92;
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.profiles {
-    background-color: #d3a05f;
-    margin: 0px auto;
-    padding: 20px 30px 40px 30px;
-    overflow: auto;
-    width: 75%;
-    border-radius: 8px;
-    opacity: .92;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-}
-
-
-.column {
-    float: left;
-    width: 20%;
-    padding: 5px;
-    text-align: center;
-}
-
-.column2 {
-    float: left;
-    width: 30%;
-    padding: 0;
-    margin-top: 50px;
-    position: relative;
-    text-align: center;
-}
 
 /* Clear floats after image containers */
 .row {
     display: flex;
 }
 
-figcaption {
-    font-size: 20px;
-}
-
-/*Iframe position*/
-#game {
-    border: 2.5px solid black;
-    border-radius: 8px;
-
-}
 
 .table {
     border: 5px solid black;
@@ -239,105 +132,3 @@ figcaption {
     display: block
 }
 
-.video {
-    border: 2.5px solid black;
-    border-radius: 8px;
-}
-
-
-button,
-input[type="button"] {
-    border: none;
-    border-radius: 0;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    padding: inherit display: inline-block;
-    text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
-}
-
-.menu-toggle {
-    font-size: 0.875em;
-    padding: em;
-}
-
-.menu-toggle:focus {
-    outline: thin dotted;
-    outline-offset: -2px;
-}
-
-.icon {
-    display: inline-flex;
-    fill: currentColor;
-    height: 1em;
-    width: 1em;
-    vertical-align: middle;
-    position: relative;
-    /* Align more nicely with capital letters */
-    top: -0.0625em;
-}
-
-/* Menu toggle styles. */
-
-.icon-menu-toggle {
-    width: 1em;
-    height: 1em;
-    top: 0;
-}
-
-/* Animate menu icon (lines). */
-.svg-menu-toggle .line {
-    opacity: 1;
-    transform: rotate(0) translateY(0) translateX(0);
-    transform-origin: 1em 1em;
-    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-}
-
-.svg-menu-toggle .line-1 {
-    transform-origin: 1em 2.5em;
-}
-
-.svg-menu-toggle .line-3 {
-    transform-origin: 1em 3.5em;
-}
-
-.menu-toggle.opened .svg-menu-toggle .line-1 {
-    transform: rotate(45deg) translateY(0) translateX(0);
-}
-
-.menu-toggle.opened .svg-menu-toggle .line-2 {
-    opacity: 0;
-}
-
-.menu-toggle.opened .svg-menu-toggle .line-3 {
-    transform: rotate(-45deg) translateY(0em) translateX(0em);
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-ul li ul li a {
-    display: none;
-    position: absolute;
-}
-
-nav ul li:hover ul a {
-    display: block;
-    position: absolute;
-    overflow: visible;
-}
-
-nav ul li ul li a {
-    position: absolute;
-    background-color: black;
-    z-index: 10;
-    width: 150px;
-    overflow: visible;
-}
