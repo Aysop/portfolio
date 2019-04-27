@@ -54,6 +54,7 @@
                         }
 
                     };
+
                 </script>
             </ul>
         </nav>
@@ -122,41 +123,73 @@
                 </video></div>
         </table>
     </div>
-    <!--Caeser Section-->
+    <!--Caeser Section (src: https://codepen.io/MattCK/pen/OyQyxE )-->
     <div>
         <h2>Caesar Cipher</h2>
     </div>
     <div class="about table">
         <table>
             <p9>
-                <p>Secret message: <input id="text" size="80"></p>
-                <p>Shift by key: <input id="key" size="2" value="3"></p>
-                <p>Encoded message:
-                    <span id="output" style="color:red"></span></p>
-                <script src="main.js"></script>
-                <script>
-                    $('input').keyup(function() {
-                        var k = Number($('#key').val());
-                        if (!(k >= 0 && k < 26)) {
-                            $('#output').html('Key should be between 0 and 25');
-                            return;
-                        }
-                        var secret = $('#text').val().toLowerCase();
-                        var encoded = '';
-                        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-                        for (var j = 0; j < secret.length; j += 1) {
-                            var nextchar = secret.charAt(j);
-                            var index = alphabet.indexOf(nextchar);
-                            if (index >= 0) {
-                                var shifted = (index + k) % 26;
-                                encoded += alphabet.charAt(shifted);
-                            } else {
-                                encoded += nextchar;
+                <div class="input">
+                    <form id="form">
+                        Message:
+                        <input type="text" id="cypher" />
+                        Offset:
+                        <input type="number" value="7" id="offset" />
+                        <br />
+                        <br />
+                        Encryption:
+                        <input type="text" id="finish" />
+                        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                        <script id="rendered-js">
+                            var alphabet = "abcdefghijklmnopqrstuvwxyz";
+                            var fullAlphabet = alphabet + alphabet + alphabet;
+
+                            function runCipher() {
+                                var cipherText = $('#cypher').val();
+                                var cipherOffset = $('#offset').val();
+                                cipherOffset = (cipherOffset % alphabet.length);
+                                var cipherFinish = '';
+
+                                for (i = 0; i < cipherText.length; i++) {
+                                    var letter = cipherText[i];
+                                    var upper = (letter == letter.toUpperCase());
+                                    letter = letter.toLowerCase();
+
+                                    var index = alphabet.indexOf(letter);
+                                    if (index == -1) {
+                                        cipherFinish += letter;
+                                    } else {
+                                        index = ((index + cipherOffset) + alphabet.length);
+                                        var nextLetter = fullAlphabet[index];
+                                        if (upper) nextLetter = nextLetter.toUpperCase();
+                                        cipherFinish += nextLetter;
+                                    }
+                                }
+
+                                $('#finish').val(cipherFinish);
                             }
-                        }
-                        $('#output').html(encoded);
-                    });
-                </script>
+
+                            $(document).ready(function() {
+                                $('#cypher').keypress(function() {
+                                    setTimeout(function() {
+                                        runCipher();
+                                    }, 20);
+                                });
+                                $('#cypher').blur(function() {
+                                    runCipher();
+                                });
+                                $('#offset').change(function() {
+                                    setTimeout(runCipher(), 20);
+                                });
+
+                            });
+
+                        </script>
+                        <br />
+                    </form>
+                </div>
             </p9>
         </table>
     </div>
@@ -174,8 +207,8 @@
                     </a></figure>
             </div>
             <div class="column2">
-                <figure><a href="https://www.reddit.com/user/Cotton-Eye"><img src=https://pmcvariety.files.wordpress.com/2014/10/reddit-logo.jpg alt="reddit" style="height:100px;">
-                        <figcaption>Reddit Profile</figcaption>
+                <figure><a href="https://www.linkedin.com/in/morelli-j91/"><img src=https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png alt="LinkedIn" style="height:100px;">
+                        <figcaption>LinkedIn Profile</figcaption>
                     </a></figure>
             </div>
             <div class="column2">
@@ -192,6 +225,7 @@
             var ctx = c.getContext("2d");
             ctx.font = "50px monospace";
             ctx.strokeText("Thank You!", 10, 50);
+
         </script>
     </div>
 </body>
